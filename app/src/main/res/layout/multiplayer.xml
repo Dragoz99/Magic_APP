@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView27"
+        android:id="@+id/graveyard_oppo"
         android:layout_width="0dp"
         android:layout_height="19dp"
         android:text="TextView"
@@ -19,7 +19,7 @@
         android:id="@+id/imageView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@+id/textView16"
+        app:layout_constraintStart_toEndOf="@+id/poison_oppo"
         app:layout_constraintTop_toBottomOf="@+id/LifeCounter"
         app:srcCompat="@android:drawable/ic_menu_gallery" />
 
@@ -27,7 +27,7 @@
         android:id="@+id/status_connection"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="status: Online"
+        android:text="status"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -40,6 +40,7 @@
         android:gravity="center|center_horizontal"
         android:text="20"
         android:textSize="60sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/AvatarOppoMulti"
         app:layout_constraintEnd_toStartOf="@+id/AvatarOppoMulti"
         app:layout_constraintStart_toStartOf="parent"
@@ -95,7 +96,7 @@
         app:srcCompat="@android:drawable/ic_menu_gallery" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/poison_oppo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
@@ -104,7 +105,7 @@
         app:layout_constraintTop_toBottomOf="@+id/LifeCounter" />
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/energy_oppo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
@@ -120,9 +121,9 @@
         android:gravity="center"
         android:text="OKO"
         android:textAllCaps="true"
-        android:textColor="#FF0000"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/textView19"
+        android:textColor="@color/design_default_color_secondary_variant"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/energy_oppo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/LifeCounter"
         app:layout_constraintTop_toBottomOf="@+id/AvatarOppoMulti" />
@@ -131,7 +132,7 @@
         android:id="@+id/imageView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintStart_toEndOf="@+id/energy_oppo"
         app:layout_constraintTop_toBottomOf="@+id/LifeCounter"
         app:srcCompat="@android:drawable/ic_menu_gallery" />
 
@@ -148,7 +149,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/imageView20"
+                android:id="@+id/red_mana_icon"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 app:srcCompat="@android:drawable/ic_menu_gallery" />
@@ -161,7 +162,7 @@
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <TextView
-                android:id="@+id/textView44"
+                android:id="@+id/counter_red_mana"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0" />
@@ -174,30 +175,63 @@
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
-                android:id="@+id/button22"
+                android:id="@+id/btn_less_red"
                 android:layout_width="28dp"
                 android:layout_height="wrap_content"
                 android:text="-"
                 app:iconPadding="0dp" />
 
             <Button
-                android:id="@+id/button23"
+                android:id="@+id/btn_red_plus"
                 android:layout_width="28dp"
                 android:layout_height="wrap_content"
                 android:text="+" />
 
             <TextView
                 android:id="@+id/textView45"
-                android:layout_width="wrap_content"
+                android:layout_width="10dp"
                 android:layout_height="wrap_content"
-                android:text="                  "
+                android:text="                "
                 tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
             <ImageView
-                android:id="@+id/imageView22"
+                android:id="@+id/poison_icon"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+            <TextView
+                android:id="@+id/textView61"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="      "
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/counter_poison"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/textView63"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="      "
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/button27"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:text="-"
+                app:iconPadding="0dp" />
+
+            <Button
+                android:id="@+id/button28"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:text="+" />
 
         </TableRow>
 
@@ -206,7 +240,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/imageView16"
+                android:id="@+id/blu_man_icon"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 app:srcCompat="@android:drawable/ic_menu_gallery" />
@@ -219,7 +253,7 @@
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <TextView
-                android:id="@+id/textView28"
+                android:id="@+id/counter_blue_mana"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0" />
@@ -245,10 +279,49 @@
 
             <TextView
                 android:id="@+id/textView47"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="                  "
                 tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/storm_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+            <TextView
+                android:id="@+id/textView64"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="      "
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/counter_storm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/textView67"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="      "
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/button29"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:text="-"
+                app:iconPadding="0dp" />
+
+            <Button
+                android:id="@+id/button30"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:text="+" />
         </TableRow>
 
         <TableRow
@@ -256,7 +329,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/imageView17"
+                android:id="@+id/white_mana_icon"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 app:srcCompat="@android:drawable/ic_menu_gallery" />
@@ -269,7 +342,7 @@
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <TextView
-                android:id="@+id/textView38"
+                android:id="@+id/counter_white_mana"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0" />
@@ -288,6 +361,52 @@
                 android:text="-" />
 
             <Button
+                android:id="@+id/button31"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:text="+" />
+
+            <TextView
+                android:id="@+id/textView68"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="                  "
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/energy_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+            <TextView
+                android:id="@+id/textView70"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="      "
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/counter_energy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/textView71"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="      "
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/button32"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:text="-"
+                app:iconPadding="0dp" />
+
+            <Button
                 android:id="@+id/button17"
                 android:layout_width="43dp"
                 android:layout_height="match_parent"
@@ -299,7 +418,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/imageView18"
+                android:id="@+id/green_mana_icon"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 app:srcCompat="@android:drawable/ic_menu_gallery" />
@@ -312,7 +431,7 @@
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <TextView
-                android:id="@+id/textView39"
+                android:id="@+id/counte_green_mana"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0" />
@@ -335,6 +454,53 @@
                 android:layout_width="43dp"
                 android:layout_height="match_parent"
                 android:text="+" />
+
+            <TextView
+                android:id="@+id/textView84"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="                  "
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/turn_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+            <TextView
+                android:id="@+id/textView85"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="      "
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/counter_turn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/textView87"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="      "
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/button39"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:text="-"
+                app:iconPadding="0dp" />
+
+            <Button
+                android:id="@+id/button40"
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:text="+" />
+
         </TableRow>
 
         <TableRow
@@ -342,7 +508,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/mana_rosso_img"
+                android:id="@+id/black_mana_icon"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 app:srcCompat="@android:drawable/ic_menu_gallery" />
@@ -355,7 +521,7 @@
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <TextView
-                android:id="@+id/textView40"
+                android:id="@+id/counter_black_mana"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0" />
@@ -378,17 +544,48 @@
                 android:layout_width="43dp"
                 android:layout_height="match_parent"
                 android:text="+" />
+
         </TableRow>
 
     </TableLayout>
 
     <TextView
-        android:id="@+id/textView60"
+        android:id="@+id/time_match"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:padding="3dp"
         android:text="timer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+
+    <TextView
+        android:id="@+id/turn_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="turni"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time_match" />
+
+    <TextView
+        android:id="@+id/textView90"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/turn_counter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/turn_counter"
+        app:layout_constraintTop_toBottomOf="@+id/time_match" />
+
+    <TextView
+        android:id="@+id/textView93"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/turn_counter" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
