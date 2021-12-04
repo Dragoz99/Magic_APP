@@ -9,16 +9,18 @@
         android:id="@+id/graveyard_oppo"
         android:layout_width="0dp"
         android:layout_height="19dp"
+        android:background="#72F4C536"
         android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView15"
+        app:layout_constraintBottom_toBottomOf="@+id/graveyard_oppo_img"
         app:layout_constraintEnd_toStartOf="@+id/NickNameOppo"
-        app:layout_constraintStart_toEndOf="@+id/imageView15"
-        app:layout_constraintTop_toTopOf="@+id/imageView15" />
+        app:layout_constraintStart_toEndOf="@+id/graveyard_oppo_img"
+        app:layout_constraintTop_toTopOf="@+id/graveyard_oppo_img" />
 
     <ImageView
-        android:id="@+id/imageView14"
+        android:id="@+id/energy_counter_img"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#72F4C536"
         app:layout_constraintStart_toEndOf="@+id/poison_oppo"
         app:layout_constraintTop_toBottomOf="@+id/LifeCounter"
         app:srcCompat="@android:drawable/ic_menu_gallery" />
@@ -36,6 +38,7 @@
         android:id="@+id/LifeCounter"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:background="#72F4C536"
         android:foregroundGravity="center"
         android:gravity="center|center_horizontal"
         android:text="20"
@@ -58,7 +61,6 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -88,9 +90,10 @@
         app:layout_constraintStart_toEndOf="@+id/button7" />
 
     <ImageView
-        android:id="@+id/imageView12"
+        android:id="@+id/poison_countr_img"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#72F4C536"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/LifeCounter"
         app:srcCompat="@android:drawable/ic_menu_gallery" />
@@ -99,24 +102,27 @@
         android:id="@+id/poison_oppo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#72F4C536"
         android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView12"
-        app:layout_constraintStart_toEndOf="@+id/imageView12"
+        app:layout_constraintBottom_toBottomOf="@+id/poison_countr_img"
+        app:layout_constraintStart_toEndOf="@+id/poison_countr_img"
         app:layout_constraintTop_toBottomOf="@+id/LifeCounter" />
 
     <TextView
         android:id="@+id/energy_oppo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#72F4C536"
         android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView14"
-        app:layout_constraintStart_toEndOf="@+id/imageView14"
+        app:layout_constraintBottom_toBottomOf="@+id/energy_counter_img"
+        app:layout_constraintStart_toEndOf="@+id/energy_counter_img"
         app:layout_constraintTop_toBottomOf="@+id/LifeCounter" />
 
     <TextView
         android:id="@+id/NickNameOppo"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:background="#72F4C536"
         android:fontFamily="sans-serif-smallcaps"
         android:gravity="center"
         android:text="OKO"
@@ -129,9 +135,10 @@
         app:layout_constraintTop_toBottomOf="@+id/AvatarOppoMulti" />
 
     <ImageView
-        android:id="@+id/imageView15"
+        android:id="@+id/graveyard_oppo_img"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#72F4C536"
         app:layout_constraintStart_toEndOf="@+id/energy_oppo"
         app:layout_constraintTop_toBottomOf="@+id/LifeCounter"
         app:srcCompat="@android:drawable/ic_menu_gallery" />
@@ -557,7 +564,7 @@
         android:text="timer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+        app:layout_constraintTop_toBottomOf="@+id/graveyard_oppo_img" />
 
     <TextView
         android:id="@+id/turn_counter"
@@ -570,7 +577,7 @@
         app:layout_constraintTop_toBottomOf="@+id/time_match" />
 
     <TextView
-        android:id="@+id/textView90"
+        android:id="@+id/turn_counter_global"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="TextView"
@@ -587,5 +594,46 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/turn_counter" />
+
+    <TextView
+        android:id="@+id/life_point_user"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="20"
+        android:textSize="96sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toStartOf="@+id/button10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView93" />
+
+    <Button
+        android:id="@+id/btn_plus_life_user"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="+"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/life_point_user"
+        app:layout_constraintTop_toBottomOf="@+id/textView93" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="reset life"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_less_life_user"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="-"
+        app:layout_constraintBottom_toTopOf="@+id/button10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/life_point_user"
+        app:layout_constraintTop_toBottomOf="@+id/btn_plus_life_user"
+        app:layout_constraintVertical_bias="0.546" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
