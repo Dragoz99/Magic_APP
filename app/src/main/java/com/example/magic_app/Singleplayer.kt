@@ -13,13 +13,12 @@ class Singleplayer: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.singleplayer)
+        val actionBar = supportActionBar
+
+        actionBar!!.title= "SinglePlayer"
+        actionBar.setDisplayHomeAsUpEnabled(true)
     }
 
 
-    fun closeActivity(v: View){
-        var resultIntent = Intent()
-        resultIntent.putExtra("result", returnValue)
-        setResult(Activity.RESULT_OK, resultIntent)
-        finish()
-    }
+
 }
