@@ -54,19 +54,20 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btn_start_singleplayer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="openSinglePlayerActivity"
         android:text="life counter" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/btn_start_multiplayer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="LIfe Counter bluetooth" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/btn_deck_library"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Deck library" />
