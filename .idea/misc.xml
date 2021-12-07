@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/Users/loren/AndroidStudioProjects/Magic_APP/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.22407407407407406" />
         <entry key="..\:/Users/loren/AndroidStudioProjects/Magic_APP/app/src/main/res/drawable/ic_avatar_oko_ug_background.xml" value="0.3828125" />
+        <entry key="..\:/Users/loren/AndroidStudioProjects/Magic_APP/app/src/main/res/drawable/ic_black_mana_icon_background.xml" value="0.2546875" />
         <entry key="..\:/Users/loren/AndroidStudioProjects/Magic_APP/app/src/main/res/drawable/ic_launcher_background.xml" value="0.22407407407407406" />
         <entry key="..\:/Users/loren/AndroidStudioProjects/Magic_APP/app/src/main/res/layout/activity_device_list.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/loren/AndroidStudioProjects/Magic_APP/app/src/main/res/layout/activity_main.xml" value="0.33" />
@@ -12,13 +13,14 @@
         <entry key="..\:/Users/loren/AndroidStudioProjects/Magic_APP/app/src/main/res/layout/button_down_match.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/loren/AndroidStudioProjects/Magic_APP/app/src/main/res/layout/counter_life.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/loren/AndroidStudioProjects/Magic_APP/app/src/main/res/layout/counter_token.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/loren/AndroidStudioProjects/Magic_APP/app/src/main/res/layout/multiplayer.xml" value="0.33" />
+        <entry key="..\:/Users/loren/AndroidStudioProjects/Magic_APP/app/src/main/res/layout/multiplayer.xml" value="0.5" />
         <entry key="..\:/Users/loren/AndroidStudioProjects/Magic_APP/app/src/main/res/layout/multiplayer_layout.xml" value="0.5" />
         <entry key="..\:/Users/loren/AndroidStudioProjects/Magic_APP/app/src/main/res/layout/oppo_player.xml" value="1.5904605263157894" />
         <entry key="..\:/Users/loren/AndroidStudioProjects/Magic_APP/app/src/main/res/layout/opponoment_player.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/loren/AndroidStudioProjects/Magic_APP/app/src/main/res/layout/setting.xml" value="0.5" />
-        <entry key="..\:/Users/loren/AndroidStudioProjects/Magic_APP/app/src/main/res/layout/singleplayer.xml" value="0.5" />
+        <entry key="..\:/Users/loren/AndroidStudioProjects/Magic_APP/app/src/main/res/layout/singleplayer.xml" value="0.33" />
         <entry key="..\:/Users/loren/AndroidStudioProjects/Magic_APP/app/src/main/res/menu/bluetooth_chat.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/loren/AndroidStudioProjects/Magic_APP/app/src/main/res/mipmap-anydpi-v26/ic_storm_icon.xml" value="0.22135416666666666" />
       </map>
     </option>
   </component>
