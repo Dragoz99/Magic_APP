@@ -58,7 +58,7 @@
         app:srcCompat="@mipmap/ic_avatar_ug_foreground" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/hestoryBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Concedi"
@@ -72,7 +72,7 @@
         android:text="cronologia"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button7" />
+        app:layout_constraintStart_toEndOf="@+id/hestoryBtn" />
 
     <ImageView
         android:id="@+id/poison_countr_img"
@@ -132,7 +132,7 @@
         android:id="@+id/tableLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintBottom_toTopOf="@+id/hestoryBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
@@ -167,7 +167,7 @@
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
-                android:id="@+id/btn_less_red"
+                android:id="@+id/lessRedBtn"
                 android:layout_width="28dp"
                 android:layout_height="wrap_content"
                 android:onClick="lessRedMana"
@@ -175,7 +175,7 @@
                 app:iconPadding="0dp" />
 
             <Button
-                android:id="@+id/btn_red_plus"
+                android:id="@+id/plusRedBtn"
                 android:layout_width="28dp"
                 android:layout_height="wrap_content"
                 android:onClick="addRedMana"
@@ -208,7 +208,7 @@
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
-                android:id="@+id/button27"
+                android:id="@+id/lessStormBtn"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:onClick="lessStormCounter"
@@ -216,7 +216,7 @@
                 app:iconPadding="0dp" />
 
             <Button
-                android:id="@+id/button28"
+                android:id="@+id/plusStormBtn"
                 android:layout_width="44dp"
                 android:layout_height="wrap_content"
                 android:onClick="addStormCounter"
@@ -255,14 +255,14 @@
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
-                android:id="@+id/button14"
+                android:id="@+id/lessBlueBtn"
                 android:layout_width="38dp"
                 android:layout_height="wrap_content"
                 android:onClick="lessBlueMana"
                 android:text="-" />
 
             <Button
-                android:id="@+id/button15"
+                android:id="@+id/plusBlueBtn"
                 android:layout_width="48dp"
                 android:layout_height="match_parent"
                 android:onClick="addBlueMana"
@@ -295,14 +295,14 @@
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
-                android:id="@+id/button29"
+                android:id="@+id/lessInfectBtn"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:text="-"
                 app:iconPadding="0dp" />
 
             <Button
-                android:id="@+id/button30"
+                android:id="@+id/plusInfectBtn"
                 android:layout_width="44dp"
                 android:layout_height="wrap_content"
                 android:text="+" />
@@ -339,14 +339,14 @@
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
-                android:id="@+id/button16"
+                android:id="@+id/lessWhiteBtn"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:onClick="lessWhiteMana"
                 android:text="-" />
 
             <Button
-                android:id="@+id/button31"
+                android:id="@+id/plusWhiteBtn"
                 android:layout_width="44dp"
                 android:layout_height="wrap_content"
                 android:onClick="addWhiteMana"
@@ -423,14 +423,14 @@
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
-                android:id="@+id/button18"
+                android:id="@+id/lessGreenBtn"
                 android:layout_width="38dp"
                 android:layout_height="wrap_content"
                 android:onClick="lessGreenMana"
                 android:text="-" />
 
             <Button
-                android:id="@+id/button19"
+                android:id="@+id/plusGreenBtn"
                 android:layout_width="43dp"
                 android:layout_height="match_parent"
                 android:onClick="addGreenMana"
@@ -508,14 +508,14 @@
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
-                android:id="@+id/button20"
+                android:id="@+id/lessBlackBtn"
                 android:layout_width="38dp"
                 android:layout_height="wrap_content"
                 android:onClick="lessBlackMana"
                 android:text="-" />
 
             <Button
-                android:id="@+id/button21"
+                android:id="@+id/plusBlackBtn"
                 android:layout_width="43dp"
                 android:layout_height="match_parent"
                 android:onClick="addBlackMana"
@@ -529,6 +529,7 @@
         android:id="@+id/time_match"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
         android:padding="3dp"
         android:text="timer"
         app:layout_constraintEnd_toEndOf="parent"
@@ -573,12 +574,12 @@
         android:textSize="96sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout"
-        app:layout_constraintEnd_toStartOf="@+id/button10"
+        app:layout_constraintEnd_toStartOf="@+id/resetButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView93" />
 
     <Button
-        android:id="@+id/btn_plus_life_user"
+        android:id="@+id/plusLifeBtn"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:text="+"
@@ -587,7 +588,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView93" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/resetButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="resetbutton"
@@ -596,11 +597,11 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/btn_less_life_user"
+        android:id="@+id/lessLifeBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="-"
-        app:layout_constraintBottom_toTopOf="@+id/button10"
+        app:layout_constraintBottom_toTopOf="@+id/resetButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/life_point_user"
         app:layout_constraintTop_toBottomOf="@+id/btn_plus_life_user"
