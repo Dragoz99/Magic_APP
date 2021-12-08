@@ -25,24 +25,24 @@ val COL_STORM = "storm"
 val COL_LIFE = "life"
 
 
-class DataBaseHelper(var context: Context): SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION){
+open class DataBaseHelper(var context: Context): SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION){
     override fun onCreate(db: SQLiteDatabase?){
         var createTable = "CREATE TABLE " + TABLENAME + " ("+
-                COL_NICKNAME + "VARCHAR(20) PRIMARY KEY," +
-                COL_AVATAR + "VARCHAR(30) NOT NULL," +
-                COL_REDMANA + "INTEGER(2) NOT NULL,"+
-                COL_BLUEMANA + "INTEGER(2) NOT NULL,"+
-                COL_STORM + "INTEGER(2) NOT NULL,"
-                COL_LIFE + "INTEGER(3) NOT NULL)"
+                COL_NICKNAME + " VARCHAR(20)," +
+                COL_AVATAR + " VARCHAR(30)," +
+                COL_REDMANA + " INTEGER,"+
+                COL_BLUEMANA + " INTEGER,"+
+                COL_STORM + " INTEGER,"+
+                COL_LIFE + " INTEGER)"
         db?.execSQL(createTable)
 
     }
 
-    override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
+  override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
         db?.execSQL("DROP TABLE IF EXISTS " + TABLENAME)
         onCreate(db)
     }
-    fun insertData(user: User) {
+    open fun insertData(user: User) {
         val database =this.writableDatabase
         val contentValues = ContentValues()
         contentValues.put(COL_NICKNAME,user.nickname)
@@ -59,7 +59,7 @@ class DataBaseHelper(var context: Context): SQLiteOpenHelper(context, DATABASE_N
             Toast.makeText(context, "Success", Toast.LENGTH_SHORT).show()
         }
     }
-    fun readData(): MutableList<User> {
+    open fun readData(): MutableList<User> {
         val list: MutableList<User> = ArrayList()
         val db = this.readableDatabase
         val query = "Select * from $TABLENAME"
