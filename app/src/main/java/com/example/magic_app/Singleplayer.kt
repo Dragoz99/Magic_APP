@@ -8,11 +8,14 @@ import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.singleplayer.*
 
 class Singleplayer: AppCompatActivity() {
-    val TAG = "Singleplayer"
-    var returnValue = 0.0
+
+    val INDEX_LIFE =2
+    var TOTAL_LIFE =20
 
 
-    var TOTAL_LIFE = 20
+   // var userLocal = User("Jace_Beleren","AVATAR_SET_UP_U",20,0,0,0)
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,6 +24,11 @@ class Singleplayer: AppCompatActivity() {
 
         actionBar!!.title= "SinglePlayer"
         actionBar.setDisplayHomeAsUpEnabled(true)
+
+       /* val db = DataBaseHelper(this)
+        var datiUtente = db.readData()
+       var d= datiUtente.get(INDEX_LIFE)*/
+
 
         LifeView.text = "$TOTAL_LIFE"
 
@@ -37,6 +45,8 @@ class Singleplayer: AppCompatActivity() {
         TOTAL_LIFE = 20
         LifeView.text = "$TOTAL_LIFE"
     }
+
+
 
 
 

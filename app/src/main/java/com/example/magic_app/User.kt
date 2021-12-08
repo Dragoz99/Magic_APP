@@ -18,6 +18,15 @@ class User {
      this.blueMana = blueMana
      this.stormCounter = stormCounter
  }
+    constructor(){
+        this.nickname = nickname
+        this.avatar = avatar
+        this.life = life
+        this.redMana = redMana
+        this.blueMana = blueMana
+        this.stormCounter = stormCounter
+    }
+
 
 
 

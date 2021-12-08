@@ -17,17 +17,18 @@ class MainActivity : AppCompatActivity() {
         title = TAG
         Log.v(TAG, "onCreate")
 
-        val db = DataBaseHelper(this)
+       /* val db = DataBaseHelper(this)
         var users = db.readData()
-        if(users.size ==0){
+        if(users.size ==0){//creazione se non c'è nulla sul database
+            // l'app imposta l'utente di default
             val toyUsers = arrayOf("Jace_Beleren AVATAR_SET_UP_U 20 0 0 0")
             toyUsers.forEach {
                 val pos = it.split(" ")
                 db.insertData(User(pos[0],pos[1],pos[2].toInt(),pos[3].toInt(),pos[4].toInt(),pos[5].toInt()))
             }
-            users = db.readData()
 
-        }
+
+        }*/
 
     }
 

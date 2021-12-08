@@ -70,13 +70,15 @@ class DataBaseHelper(var context: Context): SQLiteOpenHelper(context, DATABASE_N
                 //ignora le line rosse!!
                 user.nickname = result.getString(result.getColumnIndex(COL_NICKNAME))
                 user.avatar = result.getString(result.getColumnIndex(COL_AVATAR))
-                user.redMana = result.getInt(result.getColumnIndex(COL_REDMANA))
-                user.blueMana = result.getInt(result.getColumnIndex(COL_BLUEMANA))
-                user.stormCounter = result.getInt(result.getColumnIndex(COL_STORM))
-                user.life = result.getInt(result.getColumnIndex(COL_STORM))
+                user.redMana = result.getString(result.getColumnIndex(COL_REDMANA)).toInt()
+                user.blueMana = result.getString(result.getColumnIndex(COL_BLUEMANA)).toInt()
+                user.stormCounter = result.getString(result.getColumnIndex(COL_STORM)).toInt()
+                user.life = result.getString(result.getColumnIndex(COL_STORM)).toInt()
                 list.add(user)
             } while (result.moveToNext())
         }
+        result.close()
+        db.close()
         return list
 
     }
