@@ -56,7 +56,7 @@ class DataBaseAvatar(var context: Context): SQLiteOpenHelper(context, DATABASE_N
         if (result.moveToFirst()) {
             do {
                 val avatar = Avatar()
-                avatar.code = result.getString(result.getColumnIndex(COL_ID_AVATAR))
+                //avatar.code = result.getString(result.getColumnIndex(COL_ID_AVATAR))
                 avatar.nameAvatar = result.getString(result.getColumnIndex(COL_NAME_AVATAR))
                 list.add(avatar)
             } while (result.moveToNext())

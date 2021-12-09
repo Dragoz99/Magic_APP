@@ -16,10 +16,23 @@ class Option : AppCompatActivity(){
 
         val db = DataBaseAvatar(this)
         var avatar = db.readData()
-        if(avatar.size==0){ db.insertData(Avatar("uno","ajani"))
+        if(avatar.size==0){
+            // in sospeso
+//--------------------------------------------------------------------------
+            val toyUsers = arrayOf(
+
+                "AVATAR_SET_UP_GU liliana","AVATAR_SET_UP_U teferi"
+            )
+            toyUsers.forEach {
+                val pos = it.split(" ")
+                db.insertData(Avatar(pos[0],pos[1]))
+            }
+            //db.insertData(Avatar("uno","ajani"))
             avatar = db.readData()
         lista.adapter = AvatarSelectorAdapter(this,avatar)
 
         }
+//--------------------------------------------------------------------------
+
     }
 }
