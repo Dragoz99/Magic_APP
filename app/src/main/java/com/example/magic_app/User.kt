@@ -1,8 +1,10 @@
 package com.example.magic_app
 
+import android.os.Parcel
+import android.os.Parcelable
 import android.provider.ContactsContract
 
-class User {
+open class User {
   var nickname : String ="Jace_Beleren"       //DEFAULT SETTING
   var avatar: String = "AVATAR_SET_UP_U"      //DEFAULT SETTING
   var life: Int = 20
@@ -19,16 +21,8 @@ class User {
      this.stormCounter = stormCounter
  }
     constructor(){
-        this.nickname = nickname
-        this.avatar = avatar
-        this.life = life
-        this.redMana = redMana
-        this.blueMana = blueMana
-        this.stormCounter = stormCounter
+
     }
-
-
-
 
 
 

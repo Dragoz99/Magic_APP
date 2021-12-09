@@ -82,4 +82,5 @@ open class DataBaseHelper(var context: Context): SQLiteOpenHelper(context, DATAB
         return list
 
     }
+
 }
