@@ -14,28 +14,21 @@
         android:id="@+id/singleplayer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:onClick="openSinglePlayerActivity"
         android:text="Singleplayer"
         app:layout_constraintBottom_toTopOf="@+id/btnMultiplayer"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/viewConsole" />
-
-    <ImageView
-        android:id="@+id/avatarUser"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_avatar_ug_foreground" />
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/viewConsole"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="@+id/avatarUser"
-        app:layout_constraintEnd_toStartOf="@+id/avatarUser"
+        app:layout_constraintBottom_toTopOf="@+id/singleplayer"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -43,12 +36,13 @@
         android:id="@+id/btnMultiplayer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="160dp"
         android:onClick="openMultiplayerActivity"
         android:text="Multiplayer"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/viewConsole" />
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/settingBtn"

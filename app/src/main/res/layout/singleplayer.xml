@@ -6,41 +6,367 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/btnTimeSet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="Tempo"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TableLayout
         android:id="@+id/tableLayout2"
         android:layout_width="385dp"
         android:layout_height="272dp"
-        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintBottom_toTopOf="@+id/btnTimeSet"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="33dp"
+                android:layout_height="48dp"
+                app:srcCompat="@mipmap/ic_red_mana_icon_round" />
+
+            <TextView
+                android:id="@+id/textViewRedMana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="TextView"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnLessRed"
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:onClick="lessRedMana"
+                android:text="-"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/btnPlusRed"
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:onClick="addRedMana"
+                android:text="+"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="33dp"
+                android:layout_height="48dp"
+                app:srcCompat="@mipmap/infect_counter_foreground" />
+
+            <TextView
+                android:id="@+id/textViewInfect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="TextView"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnLessInfect"
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:onClick="lessInfect"
+                android:text="-"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/btnPlusInfect"
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:onClick="addInfect"
+                android:text="+"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="33dp"
+                android:layout_height="48dp"
+                app:srcCompat="@mipmap/ic_blue_mana_icon_round" />
+
+            <TextView
+                android:id="@+id/textViewBlueMana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="TextView"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnLessBlue"
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:onClick="lessBlueMana"
+                android:text="-"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/btnPlusBlue"
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:onClick="addBlueMana"
+                android:text="+"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="33dp"
+                android:layout_height="48dp"
+                app:srcCompat="@mipmap/storm___icon" />
+
+            <TextView
+                android:id="@+id/textViewStorm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="TextView"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnLessStorm"
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:onClick="lessStrom"
+                android:text="-"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/btnPlusStorm"
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:onClick="addStorm"
+                android:text="+"
+                tools:ignore="TouchTargetSizeCheck" />
+        </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="33dp"
+                android:layout_height="48dp"
+                app:srcCompat="@mipmap/ic_white_mana_icon_foreground" />
+
+            <TextView
+                android:id="@+id/textViewWhiteMana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="TextView"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnLessWhite"
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:onClick="lessWhiteMana"
+                android:text="-"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/btnPlusWhite"
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:onClick="addWhiteMana"
+                android:text="+"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="33dp"
+                android:layout_height="48dp"
+                app:srcCompat="@mipmap/ic_turn_icon" />
+
+            <TextView
+                android:id="@+id/textViewTurn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="TextView"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnLessTurn"
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:onClick="lessTurn"
+                android:text="-"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/btnPlusTurn"
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:onClick="addTurn"
+                android:text="+"
+                tools:ignore="TouchTargetSizeCheck" />
+        </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="33dp"
+                android:layout_height="48dp"
+                app:srcCompat="@mipmap/ic_black_mana_icon_foreground" />
+
+            <TextView
+                android:id="@+id/textViewBlackMana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="TextView"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnLessBlack"
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:onClick="lessBlackMana"
+                android:text="-"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/btnPlusBlack"
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:onClick="addBlackMana"
+                android:text="+"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="33dp"
+                android:layout_height="48dp"
+                app:srcCompat="@mipmap/ic_graveyard_icon" />
+
+            <TextView
+                android:id="@+id/textViewGraveyard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="TextView"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnLessGrave"
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:onClick="lessGraveyard"
+                android:text="-"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/btnPlusGrave"
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:onClick="addGraveyard"
+                android:text="+"
+                tools:ignore="TouchTargetSizeCheck" />
+        </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="33dp"
+                android:layout_height="48dp"
+                app:srcCompat="@mipmap/green_mana_round" />
+
+            <TextView
+                android:id="@+id/textViewGreenMana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="TextView"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnLessGreen"
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:onClick="lessGreenMana"
+                android:text="-"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/btnPlusGreen"
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:onClick="addGreenMana"
+                android:text="+"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="33dp"
+                android:layout_height="48dp"
+                app:srcCompat="@mipmap/ic_colorless_mana_foreground" />
+
+            <TextView
+                android:id="@+id/textViewColorlessMana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="TextView"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnLessColorless"
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:onClick="lessColorLess"
+                android:text="-"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/btnPlusColorless"
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:onClick="addColorLess"
+                android:text="+"
+                tools:ignore="TouchTargetSizeCheck" />
+        </TableRow>
+
     </TableLayout>
 
     <TextView
@@ -49,7 +375,7 @@
         android:layout_height="0dp"
         android:gravity="center"
         android:padding="30dp"
-        android:text="20"
+        android:text=""
         android:textSize="96sp"
         app:layout_constraintBottom_toTopOf="@+id/addLifeBTN"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,29 +386,54 @@
 
     <Button
         android:id="@+id/lessLifeBTN"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="115dp"
+        android:layout_height="83dp"
+        android:lineSpacingExtra="20sp"
         android:onClick="lessLife"
         android:text="-"
+        android:textSize="48sp"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/addLifeBTN"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="101dp"
+        android:layout_height="83dp"
         android:onClick="addLife"
         android:text="+"
+        android:textSize="48sp"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
         app:layout_constraintEnd_toStartOf="@+id/resetBTN"
         app:layout_constraintStart_toEndOf="@+id/lessLifeBTN" />
 
     <Button
         android:id="@+id/resetBTN"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="90dp"
+        android:layout_height="83dp"
         android:onClick="resetSinglePlayer"
         android:text="Reset"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnOpenHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cronologia"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="TextView"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnOpenHistory"
+        app:layout_constraintStart_toEndOf="@+id/btnTimeSet"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

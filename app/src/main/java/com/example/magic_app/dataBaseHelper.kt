@@ -30,10 +30,10 @@ open class DataBaseHelper(var context: Context): SQLiteOpenHelper(context, DATAB
         var createTable = "CREATE TABLE " + TABLENAME + " ("+
                 COL_NICKNAME + " VARCHAR(20)," +
                 COL_AVATAR + " VARCHAR(30)," +
-                COL_REDMANA + " INTEGER,"+
-                COL_BLUEMANA + " INTEGER,"+
-                COL_STORM + " INTEGER,"+
-                COL_LIFE + " INTEGER)"
+                COL_REDMANA + " INT,"+
+                COL_BLUEMANA + " INT,"+
+                COL_STORM + " INT,"+
+                COL_LIFE + " INT)"
         db?.execSQL(createTable)
 
     }
@@ -70,10 +70,10 @@ open class DataBaseHelper(var context: Context): SQLiteOpenHelper(context, DATAB
                 //ignora le line rosse!!
                 user.nickname = result.getString(result.getColumnIndex(COL_NICKNAME))
                 user.avatar = result.getString(result.getColumnIndex(COL_AVATAR))
-                user.redMana = result.getString(result.getColumnIndex(COL_REDMANA)).toInt()
-                user.blueMana = result.getString(result.getColumnIndex(COL_BLUEMANA)).toInt()
-                user.stormCounter = result.getString(result.getColumnIndex(COL_STORM)).toInt()
-                user.life = result.getString(result.getColumnIndex(COL_STORM)).toInt()
+                user.redMana = result.getInt(result.getColumnIndex(COL_REDMANA))
+                user.blueMana = result.getInt(result.getColumnIndex(COL_BLUEMANA))
+                user.stormCounter = result.getInt(result.getColumnIndex(COL_STORM))
+                user.life = result.getInt(result.getColumnIndex(COL_LIFE))
                 list.add(user)
             } while (result.moveToNext())
         }
@@ -81,6 +81,11 @@ open class DataBaseHelper(var context: Context): SQLiteOpenHelper(context, DATAB
         db.close()
         return list
 
+    }
+    fun delateData(){
+        val db = this.writableDatabase
+        db.execSQL("DELETE FROM Users")
+        db.close()
     }
 
 }

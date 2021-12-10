@@ -56,13 +56,27 @@ class DataBaseAvatar(var context: Context): SQLiteOpenHelper(context, DATABASE_N
         if (result.moveToFirst()) {
             do {
                 val avatar = Avatar()
-                //avatar.code = result.getString(result.getColumnIndex(COL_ID_AVATAR))
+                avatar.code = result.getString(result.getColumnIndex(COL_ID_AVATAR))
                 avatar.nameAvatar = result.getString(result.getColumnIndex(COL_NAME_AVATAR))
                 list.add(avatar)
             } while (result.moveToNext())
         }
         return list
     }
+
+    /*fun updateData(){
+        val db = this.writableDatabase
+        val query = "Select * from "+ TABLENAME_
+        val result = db.rawQuery(query,null)
+
+        if(result.moveToFirst()) {
+            do {
+                var cv = ContentValues()
+                cv.put(,result.getInt(result.getColumnIndex(COL_)))
+                db.update(TABLENAME_)
+            }while(result.moveToNext())
+        }
+    }*/
 
 }
 
