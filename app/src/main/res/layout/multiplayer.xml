@@ -147,24 +147,11 @@
                 app:srcCompat="@mipmap/ic_red_mana_icon_foreground" />
 
             <TextView
-                android:id="@+id/textView52"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="      "
-                tools:ignore="SpeakableTextPresentCheck" />
-
-            <TextView
                 android:id="@+id/counter_red_mana"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:padding="10dp"
                 android:text="0" />
-
-            <TextView
-                android:id="@+id/textView53"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="      "
-                tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
                 android:id="@+id/lessRedBtn"
@@ -188,24 +175,11 @@
                 app:srcCompat="@mipmap/storm___icon" />
 
             <TextView
-                android:id="@+id/textView61"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="      "
-                tools:ignore="SpeakableTextPresentCheck" />
-
-            <TextView
                 android:id="@+id/counter_storm"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="10dp"
                 android:text="0" />
-
-            <TextView
-                android:id="@+id/textView63"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="      "
-                tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
                 android:id="@+id/lessStormBtn"
@@ -235,24 +209,11 @@
                 app:srcCompat="@mipmap/ic_blue_mana_icon_foreground" />
 
             <TextView
-                android:id="@+id/textView48"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="      "
-                tools:ignore="SpeakableTextPresentCheck" />
-
-            <TextView
                 android:id="@+id/counter_blue_mana"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:padding="10dp"
                 android:text="0" />
-
-            <TextView
-                android:id="@+id/textView51"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="      "
-                tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
                 android:id="@+id/lessBlueBtn"
@@ -275,24 +236,11 @@
                 app:srcCompat="@mipmap/infect_counter_foreground" />
 
             <TextView
-                android:id="@+id/textView64"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="      "
-                tools:ignore="SpeakableTextPresentCheck" />
-
-            <TextView
                 android:id="@+id/counter_poison"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="10dp"
                 android:text="0" />
-
-            <TextView
-                android:id="@+id/textView67"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="      "
-                tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
                 android:id="@+id/lessInfectBtn"
@@ -303,7 +251,7 @@
 
             <Button
                 android:id="@+id/plusInfectBtn"
-                android:layout_width="44dp"
+                android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:text="+" />
         </TableRow>
@@ -319,24 +267,11 @@
                 app:srcCompat="@mipmap/ic_white_mana_icon_foreground" />
 
             <TextView
-                android:id="@+id/textView54"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="      "
-                tools:ignore="SpeakableTextPresentCheck" />
-
-            <TextView
                 android:id="@+id/counter_white_mana"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:padding="10dp"
                 android:text="0" />
-
-            <TextView
-                android:id="@+id/textView57"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="      "
-                tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
                 android:id="@+id/lessWhiteBtn"
@@ -354,29 +289,16 @@
 
             <ImageView
                 android:id="@+id/colorless_mana_icon"
-                android:layout_width="wrap_content"
+                android:layout_width="46dp"
                 android:layout_height="match_parent"
-                app:srcCompat="@android:drawable/ic_menu_gallery" />
-
-            <TextView
-                android:id="@+id/textView70"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="      "
-                tools:ignore="SpeakableTextPresentCheck" />
+                app:srcCompat="@mipmap/ic_turn_icon_foreground" />
 
             <TextView
                 android:id="@+id/counter_energy"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="10dp"
                 android:text="0" />
-
-            <TextView
-                android:id="@+id/textView71"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="      "
-                tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
                 android:id="@+id/button32"
@@ -403,24 +325,11 @@
                 app:srcCompat="@mipmap/green_mana_foreground" />
 
             <TextView
-                android:id="@+id/textView55"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="      "
-                tools:ignore="SpeakableTextPresentCheck" />
-
-            <TextView
                 android:id="@+id/counte_green_mana"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:padding="10dp"
                 android:text="0" />
-
-            <TextView
-                android:id="@+id/textView58"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="      "
-                tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
                 android:id="@+id/lessGreenBtn"
@@ -438,29 +347,16 @@
 
             <ImageView
                 android:id="@+id/turn_icon"
-                android:layout_width="wrap_content"
+                android:layout_width="47dp"
                 android:layout_height="match_parent"
-                app:srcCompat="@android:drawable/ic_menu_gallery" />
-
-            <TextView
-                android:id="@+id/textView85"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="      "
-                tools:ignore="SpeakableTextPresentCheck" />
+                app:srcCompat="@mipmap/ic_graveyard_icon_foreground" />
 
             <TextView
                 android:id="@+id/counter_turn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="10dp"
                 android:text="0" />
-
-            <TextView
-                android:id="@+id/textView87"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="      "
-                tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
                 android:id="@+id/button39"
@@ -488,24 +384,11 @@
                 app:srcCompat="@mipmap/ic_black_mana_icon_foreground" />
 
             <TextView
-                android:id="@+id/textView56"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="      "
-                tools:ignore="SpeakableTextPresentCheck" />
-
-            <TextView
                 android:id="@+id/counter_black_mana"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:padding="10dp"
                 android:text="0" />
-
-            <TextView
-                android:id="@+id/textView59"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="      "
-                tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
                 android:id="@+id/lessBlackBtn"
@@ -521,20 +404,35 @@
                 android:onClick="addBlackMana"
                 android:text="+" />
 
+            <ImageView
+                android:id="@+id/colorLess_icon"
+                android:layout_width="66dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@mipmap/ic_colorless_mana_foreground" />
+
+            <TextView
+                android:id="@+id/counter_cless_mana"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:text="-"
+                app:iconPadding="0dp" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:text="+" />
+
         </TableRow>
 
     </TableLayout>
-
-    <TextView
-        android:id="@+id/time_match"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:padding="3dp"
-        android:text="timer"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/graveyard_oppo_img" />
 
     <TextView
         android:id="@+id/turn_counter"
@@ -544,7 +442,7 @@
         android:text="turni"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/time_match" />
+        app:layout_constraintTop_toBottomOf="@+id/poison_countr_img" />
 
     <TextView
         android:id="@+id/turn_counter_global"
@@ -554,7 +452,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/turn_counter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/turn_counter"
-        app:layout_constraintTop_toBottomOf="@+id/time_match" />
+        app:layout_constraintTop_toBottomOf="@+id/graveyard_oppo_img" />
 
     <TextView
         android:id="@+id/textView93"
@@ -581,7 +479,7 @@
     <Button
         android:id="@+id/plusLifeBtn"
         android:layout_width="0dp"
-        android:layout_height="48dp"
+        android:layout_height="wrap_content"
         android:text="+"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/life_point_user"
