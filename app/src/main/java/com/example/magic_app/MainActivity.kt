@@ -45,8 +45,6 @@ open class MainActivity : AppCompatActivity() {
 
     }
 
-
-
     override fun onStart(){
         super.onStart()
         Log.v(TAG, "onStart")
@@ -59,6 +57,9 @@ open class MainActivity : AppCompatActivity() {
 
     fun openSinglePlayerActivity(v: View){
         val intent = Intent(this, Singleplayer::class.java)
+
+
+
         var vita = db.readData().get(0).life
         var mana_rosso = db.readData().get(0).redMana
         var mana_blue = db.readData().get(0).blueMana
@@ -70,6 +71,8 @@ open class MainActivity : AppCompatActivity() {
         var mana_Cless = db.readData().get(0).colorlessmana
         var graveyard = db.readData().get(0).graveyard
         var infect = db.readData().get(0).infectmana
+
+
 
 
         intent.putExtra("Storm", storm)                 //storm
@@ -91,7 +94,38 @@ open class MainActivity : AppCompatActivity() {
 
     fun openMultiplayerActivity(v: View){
         val intent = Intent(this, MultiPlayer::class.java)
+
+        var nickname = db.readData().get(0).nickname
+        var avatar = db.readData().get(0).avatar
+
+        var vita = db.readData().get(0).life
+        var mana_rosso = db.readData().get(0).redMana
+        var mana_blue = db.readData().get(0).blueMana
+        var mana_white = db.readData().get(0).whiteMana
+        var mana_green = db.readData().get(0).greenMana
+        var mana_black = db.readData().get(0).blackMana
+        var storm = db.readData().get(0).stormCounter
+        var turni = db.readData().get(0).turnCounter
+        var mana_Cless = db.readData().get(0).colorlessmana
+        var graveyard = db.readData().get(0).graveyard
+        var infect = db.readData().get(0).infectmana
+
+        intent.putExtra("Avatar", avatar)
+        intent.putExtra("Nickname", nickname)
+        intent.putExtra("Storm", storm)                 //storm
+        intent.putExtra("Turn",turni)                   //turn
+        intent.putExtra("Life", vita)                   //life
+        intent.putExtra("Red", mana_rosso)              //red
+        intent.putExtra("Blue", mana_blue)              //blue
+        intent.putExtra("White",mana_white)             //white
+        intent.putExtra("Black",mana_black)             //black
+        intent.putExtra("Green",mana_green)             //green
+        intent.putExtra("ColorLess",mana_Cless)         //color less
+        intent.putExtra("Graveyard",graveyard)          //graveyard
+        intent.putExtra("Infect",infect)
+
         startActivity(intent)
+
     }
 
     fun openOptionActivity(v: View){

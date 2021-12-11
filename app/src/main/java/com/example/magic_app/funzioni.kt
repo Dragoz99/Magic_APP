@@ -45,4 +45,10 @@ interface funzioni {
 
     fun openCronologia(v: View)
     fun setTimeOpen(v:View)
+    fun addTimer(v: View)
+    fun stopTime(v: View)
+    fun resetTimer(v: View)
+    fun setTimer(v: View)
+
+
 }

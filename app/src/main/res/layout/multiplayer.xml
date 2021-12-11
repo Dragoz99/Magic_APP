@@ -294,7 +294,7 @@
                 app:srcCompat="@mipmap/ic_turn_icon_foreground" />
 
             <TextView
-                android:id="@+id/counter_energy"
+                android:id="@+id/counter_turn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
@@ -325,7 +325,7 @@
                 app:srcCompat="@mipmap/green_mana_foreground" />
 
             <TextView
-                android:id="@+id/counte_green_mana"
+                android:id="@+id/counter_green_mana"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
@@ -352,7 +352,7 @@
                 app:srcCompat="@mipmap/ic_graveyard_icon_foreground" />
 
             <TextView
-                android:id="@+id/counter_turn"
+                android:id="@+id/counter_grave"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"

@@ -175,7 +175,6 @@ class Singleplayer: AppCompatActivity(),funzioni{
         GRAVEYARD += 1
         textViewGraveyard.text ="$GRAVEYARD"
     }
-
     override fun lessGraveyard(v: View) {
         GRAVEYARD -= 1
         textViewGraveyard.text ="$GRAVEYARD"
@@ -185,7 +184,6 @@ class Singleplayer: AppCompatActivity(),funzioni{
         INFECT += 1
         textViewInfect.text = "$INFECT"
     }
-
     override fun lessInfect(v: View) {
         INFECT -= 1
         textViewInfect.text = "$INFECT"
@@ -196,7 +194,6 @@ class Singleplayer: AppCompatActivity(),funzioni{
         textViewTurn.text = "$TURN"
 
     }
-
     override fun lessTurn(v: View) {
         TURN -= 1
         textViewTurn.text = "$TURN"
@@ -210,6 +207,22 @@ class Singleplayer: AppCompatActivity(),funzioni{
     }
 
     override fun setTimeOpen(v: View) {
+        TODO("Not yet implemented")
+    }
+
+    override fun addTimer(v: View) {
+        TODO("Not yet implemented")
+    }
+
+    override fun stopTime(v: View) {
+        TODO("Not yet implemented")
+    }
+
+    override fun resetTimer(v: View) {
+        TODO("Not yet implemented")
+    }
+
+    override fun setTimer(v: View) {
         TODO("Not yet implemented")
     }
 
